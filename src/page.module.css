@@ -1,0 +1,91 @@
+/* Full Monty Styling for Page.module.css */
+
+/* Root Styles */
+:root {
+    --primary-color: #0070f3;
+    --hover-color: #005bb5;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: "Inter", sans-serif;
+  }
+  
+  /* General Page Layout */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centered Container */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Subtitle Styling */
+  .subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Text Block */
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styled Button */
+  .button {
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background: var(--hover-color);
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design Tweaks */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  }
+  
