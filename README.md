@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sightful
+
+A compassionate AI assistant built with Next.js and Python.
+
+## About
+
+**Sightful** is an emotionally intelligent AI assistant designed to support users through challenging times. It combines advanced sentiment analysis with empathetic responses to provide meaningful guidance and emotional support.
+
+### Tech Stack
+
+-   **Next.js** – Frontend and API routes
+-   **Python** – Natural language processing and sentiment analysis
+-   **Ollama API** – Local or remote LLM model integration
+
+## Features
+
+-   Recognizes and validates user emotions
+-   Offers practical, actionable advice
+-   Reflects cognitive patterns to promote self-awareness
+-   Encourages growth, kindness, resilience, and curiosity
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   [Node.js](https://nodejs.org/) (v14 or later)
+-   Python 3.8 or later
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Clone the repository:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    git clone [https://github.com/yourusername/sightful-mlp.git](https://github.com/yourusername/sightful-mlp.git)
+    cd sightful-mlp
+    ```
 
-## Learn More
+2.  **Install Node.js dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Set up and activate the Python virtual environment:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    On Windows:
 
-## Deploy on Vercel
+    activate_sightful_venv.bat
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    On macOS/Linux:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    source activate_sightful_venv.sh
+    ```
+
+4.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+
+Open your browser at [http://localhost:3000](http://localhost:3000) to interact with the assistant.
+
+The backend connects to the Ollama API (or a local model) to generate responses.
+
+You can customize the system prompt and model in `app/api/chat/route.ts`.
+
+## Environment Variables
+
+Create a `.env` file in the root directory with:
+
+OLLAMA_API_URL=http://localhost:11434/api/chat
+OLLAMA_MODEL=mistral
+
+
+Adjust these values as needed for your setup.
+
+## Contributing
+
+Contributions are welcome! Please feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+*Made with ❤️ by the Sightful team.*
